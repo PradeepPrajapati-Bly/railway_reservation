@@ -24,8 +24,10 @@
             box-shadow: 02px 02px 20px black;
             width: 400px;
         }
-        h2 {
+        h1 {
             text-align: center;
+            text-decoration:underline;
+            color: white;
         }
         label {
             font-weight: bold;
@@ -47,29 +49,39 @@
             font-size: larger;
             font-weight: bolder;
         }
+        .Hower:hover {
+            color: white;
+            background-color: #abcff7;
+            box-shadow: 2px 2px 10px;
+            font-weight: bolder;
+        }
         button:hover {
-            background-color: #0056b3;
+            background-color: blue;
+            color: white;
+            font-size: 25px;
+            box-shadow: 2px 2px 10px;
+            /* height: 80px; */
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h2>Railway Reservation</h2>
+        <h1>Railway Reservation</h1>
         <form>
             <label for="name">Full Name:</label>
-            <input type="text" id="name" name="name" required>
+            <input type="text" id="name" name="name" class="Hower" required>
 
             <label for="from">From:</label>
-            <input type="text" id="from" name="from" required>
+            <input type="text" id="from" name="from" class="Hower" required>
 
             <label for="to">To:</label>
-            <input type="text" id="to" name="to" required>
+            <input type="text" id="to" name="to" class="Hower" required>
 
             <label for="date">Travel Date:</label>
-            <input type="date" id="date" name="date" required>
+            <input type="date" id="date" name="date" class="Hower" required>
 
             <label for="class">Class:</label>
-            <select id="class" name="class">
+            <select id="class" name="class" class="Hower" required>
                 <option value="sleeper">Sleeper</option>
                 <option value="ac1">AC First Class</option>
                 <option value="ac2">AC Second Class</option>
